@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula webpack</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="my-5">FORMAÇÃO DE DESENVOLVEDORES PARA TECNOLOGIA DE INFORMAÇÃO - CATÓLICA SC</h1>
+        <p class="fs-5 col-md-8">Exercícios webpack e javascript</p>
+
+        <div class="row g-5">
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-ex1-tab" data-bs-toggle="tab" data-bs-target="#nav-ex1"
+                        type="button" role="tab" aria-controls="nav-ex1" aria-selected="true">Exercício 1</button>
+
+                    <button class="nav-link" id="nav-ex2-tab" data-bs-toggle="tab" data-bs-target="#nav-ex2"
+                        type="button" role="tab" aria-controls="nav-ex2" aria-selected="false">Exercício 2</button>
+
+                    <button class="nav-link" id="nav-ex3-tab" data-bs-toggle="tab" data-bs-target="#nav-ex3"
+                        type="button" role="tab" aria-controls="nav-ex3" aria-selected="false">Exercício 3</button>
+
+                    <button class="nav-link" id="nav-ex4-tab" data-bs-toggle="tab" data-bs-target="#nav-ex4"
+                        type="button" role="tab" aria-controls="nav-ex4" aria-selected="false">Exercício 4</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+
+                <div class="tab-pane fade show active" id="nav-ex1" role="tabpanel" aria-labelledby="nav-ex1-tab"
+                    tabindex="0">
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Tarefa:</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Solicite ao usuário uma data e a partir mostre a ele:</p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Que dia da semana foi 15 dias atrás.</li>
+                                        <li class="list-group-item">Que mês foi há 60 dias atrás.</li>
+                                        <li class="list-group-item">Do Ano que foi inserido, que dia da semana foi o
+                                            natal.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Solução:</h5>
+                                </div>
+                                <div class="card-body">
+
+                                    <label for="date" class="form-label">Informe a data</label>
+                                    <input class="form-control" id="date" type="date">
+                                    <button type="submit" class="btn btn-primary my-3" id="btnEnviar">Enviar</button>
+
+                                    <p class="card-text">
+                                        15 dias atás é uma: <strong id="resultado15"></strong> <br>
+                                        60 dias atrás é mês: <strong id="resultado60"></strong> <br>
+                                        o natal nesse ano é em uma: <strong id="resultadoAno"></strong> <br>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-ex2" role="tabpanel" aria-labelledby="nav-ex2-tab" tabindex="0">
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Tarefa:</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Solicite os números em formato americano (MM/DD/YYYY) em um
+                                        input e mostre em formato brasileiro (DD/MM/YYYY).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Solução:</h5>
+                                </div>
+                                <div class="card-body">
+
+                                    <label for="date2" class="form-label">Informe uma data no formato americano
+                                        (MM/DD/AAAA)</label>
+                                    <input class="form-control" id="date2" type="text" data-inputmask-alias="datetime"
+                                        data-inputmask-inputformat="mm/dd/yyyy" inputmode="numeric">
+                                    <button type="submit" class="btn btn-primary my-3" id="btnEnviar2">Enviar</button>
+
+                                    <p class="card-text">
+                                        a data no formato brasileiro é: <strong id="resultado2"></strong>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-ex3" role="tabpanel" aria-labelledby="nav-ex3-tab" tabindex="0">
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Tarefa</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Solicite duas datas para o usuário e mostre a diferença de dias
+                                        entre elas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Solução</h5>
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="date3" class="form-label">Informe uma data</label>
+                                            <input class="form-control" id="date3" type="date">
+                                            <button type="submit" class="btn btn-primary my-3"
+                                                id="btnEnviar3">Enviar</button>
+                                        </div>
+                                        <div class="col">
+                                            <label for="date4" class="form-label">Informe outra data</label>
+                                            <input class="form-control" id="date4" type="date">
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        a diferença nas datas é de: <strong id="resultado3"></strong>
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-ex4" role="tabpanel" aria-labelledby="nav-ex4-tab" tabindex="0">
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Tarefa</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Solicite duas datas com hora e minuto e mostre a diferença entre elas em horas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Solução</h5>
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="date5" class="form-label">Informe uma data</label>
+                                            <input class="form-control" id="date5" type="datetime-local">
+                                            <button type="submit" class="btn btn-primary my-3"
+                                                id="btnEnviar4">Enviar</button>
+                                        </div>
+                                        <div class="col">
+                                            <label for="date6" class="form-label">Informe outra data</label>
+                                            <input class="form-control" id="date6" type="datetime-local">
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        a diferença nas datas é de: <strong id="resultado4"></strong>
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="pt-5 my-5 text-muted border-top">
+            Created by the Bootstrap team &middot; &copy; 2022
+        </footer>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
