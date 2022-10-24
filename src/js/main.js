@@ -30,7 +30,7 @@ function calcularData() {
     const ano = moment(dateTime).year();
 
     var natal = moment("25-12-" + ano, "DD-MM-YYYY");
-  
+
     document.getElementById('resultadoAno').innerHTML = natal.format('dddd');
     //console.log('natal:', natal);
 
@@ -45,8 +45,8 @@ function calcularData2() {
 
     const resultado = moment(dateTime, "MM-DD-YYYY");
     //console.log('resultado:', resultado);
-  
-    document.getElementById('resultado2').innerHTML = resultado.format('DD/MM/YYYY');    
+
+    document.getElementById('resultado2').innerHTML = resultado.format('DD/MM/YYYY');
 
 }
 
@@ -60,8 +60,8 @@ function calcularData3() {
 
     const dt1 = moment(dateTime1);
     const dt2 = moment(dateTime2);
-  
-    document.getElementById('resultado3').innerHTML = dt2.diff(dt1, 'days') + " dias";    
+
+    document.getElementById('resultado3').innerHTML = dt2.diff(dt1, 'days') + " dias";
 
 }
 
@@ -75,11 +75,11 @@ function calcularData4() {
 
     const dt1 = moment(dateTime1);
     const dt2 = moment(dateTime2);
-  
-    document.getElementById('resultado4').innerHTML = dt2.diff(dt1, 'hours') + " horas";    
+
+    document.getElementById('resultado4').innerHTML = dt2.diff(dt1, 'hours') + " horas";
 
 }
 
-$(function() {
+$(function () {
     Inputmask().mask(document.querySelectorAll("input"));
 });

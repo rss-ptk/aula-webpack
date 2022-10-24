@@ -35,13 +35,13 @@ Essa solução também faz uso no frontend das bibliotecas [Bootstrap](https://g
 
 The following tools were used in this project:
 
-- [node](https://github.com/nodejs/node/)
-- [webpack](https://github.com/webpack/webpack/)
-- [moment](https://github.com/moment/moment/)
-- [inputmask](https://github.com/RobinHerbots/Inputmask/)
-- [lodash](https://github.com/lodash/lodash/)
-- [bootstrap](https://github.com/twbs/bootstrap/)
-- [jquery](https://github.com/jquery/jquery/)
+- [Node.js](https://github.com/nodejs/node/)
+- [Webpack](https://github.com/webpack/webpack/)
+- [Moment.js](https://github.com/moment/moment/)
+- [Jquery.Inputmask](https://github.com/RobinHerbots/Inputmask/)
+- [Lodash](https://github.com/lodash/lodash/)
+- [Bootstrap](https://github.com/twbs/bootstrap/)
+- [Jquery](https://github.com/jquery/jquery/)
 
 &#xa0;
 ## Autores
